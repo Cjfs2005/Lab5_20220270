@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments/navbar.html :: header( title = 'Inicio')}"></head>
+    <body>
+        <div class="container">
+            <nav th:replace="~{fragments/navbar.html :: navbar( active = 'User')}"></nav>
+            <h2>Hola usuario</h2>
+        </div>
+        <script th:replace="~{fragments/navbar.html :: footer-bootstrap}"></script>
+    </body>
+</html>
